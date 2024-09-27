@@ -86,7 +86,7 @@ st.dataframe(data_filtrada[[
 #5.Integración de chatGPT
 #pip install streamlit pandas seaborn matplotlib
 openai_api_key = st.secrets["OPENAI_API_KEY"]
-client = openai.OpenAI(api_key=openai_api_key)
+openai.api_key = openai_api_key
 
 
 # Función para obtener la respuesta de OpenAI
